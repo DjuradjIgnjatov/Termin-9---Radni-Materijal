@@ -1,0 +1,163 @@
+@import 'vars';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'Helvetica';
+}
+
+.container{
+    height: 100%;
+    header{
+        background: url(slike/background.jpg);
+        background-size: cover;
+        height: 92%;
+        position: relative;
+        .head-div{
+            padding: 22% 30%;
+            text-align: center;
+            h1{
+                font-size: 3em;
+                border-bottom: 1px solid $main_red;
+            }
+            h1,h3{
+                color: white;
+                text-align: center;
+                font-family: $main_font;
+            }
+        }
+        nav{
+            background-color: white;
+            width: 90%;
+            height: 4.5%;
+            margin: 1em 5%;
+            position: absolute;
+            p{
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 0.3em 0.2em;
+                color: $main_red;
+                span{
+                    color: $main_text_color;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: end;
+                list-style: none;
+                margin-top: -30px;
+                li{
+                    margin-right: 1em;
+                    color: $main_text_color;
+                    &:hover{
+                        color: black;
+                        background-color: rgb(219, 219, 219);
+                    }
+                }
+            }
+        }
+    }
+    .car-section{
+        background-color: $grey_background;
+        text-align: center;
+        height: 50%;
+        color: $main_text_color;
+        h2{
+            padding-top: 3em;
+            padding-bottom: 2em;
+        }
+        .car-container{
+            display: flex;
+            flex-direction: row;
+            div{
+                width: fit-content;
+                img{
+                    width: 60%;
+                    transition: transform .5s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin-bottom: 1em;
+                }
+                button{
+                    padding: 0.5em 2.5em;
+                    border: 0;
+                    color: white;
+                    background-color: $red_dark;
+                    transition: transform .5s;
+                    &:hover{
+                        transform: rotate(360deg) scale(1.8);
+                        background-color: orange;
+                    }
+                }
+            }
+        }
+    }
+    .table-section{
+        text-align: center;
+        color: $main_text_color;
+        height: 40%;
+        h2{
+            padding-top: 3em;
+            padding-bottom: 1em;
+        }
+        table{
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            thead{
+                font-weight: bold;
+                font-size: 1.2em;
+                background-color: $main_red;
+                font-size: 1.1em;
+                color: white;
+            }
+            th,td{
+                padding: .3em;
+            }
+            th:first-child{
+                background-color: $red_dark;
+            }
+            td:first-child{
+                background-color: $grey_background;
+            }
+            tr{
+                border-bottom: 1px solid gray;
+            }
+        }
+    }
+    footer{
+        background-color: black;
+        height: 50%;
+        h1{
+            color: $main_red;
+            border-bottom: 1px solid $main_red;
+            width: 90%;
+            margin: 0 auto;
+            padding-top: .5em;
+            span{
+                color: $main_text_color;
+            }
+        }
+        .foot-div{
+            color: white;
+            font-style: italic;
+            padding: 1em 7em;
+            display: flex;
+            justify-content: space-between;
+            iframe{
+                width: 30%;
+                height: 380px;
+            }
+        }
+    }
+}
+

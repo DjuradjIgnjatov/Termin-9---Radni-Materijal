@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Helvetica";
+}
+
+.container {
+  height: 100%;
+}
+.container header {
+  background: url(slike/background.jpg);
+  background-size: cover;
+  height: 92%;
+  position: relative;
+}
+.container header .head-div {
+  padding: 22% 30%;
+  text-align: center;
+}
+.container header .head-div h1 {
+  font-size: 3em;
+  border-bottom: 1px solid #ff3720;
+}
+.container header .head-div h1, .container header .head-div h3 {
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.container header nav {
+  background-color: white;
+  width: 90%;
+  height: 4.5%;
+  margin: 1em 5%;
+  position: absolute;
+}
+.container header nav p {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.3em 0.2em;
+  color: #ff3720;
+}
+.container header nav p span {
+  color: #797979;
+}
+.container header nav ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  margin-top: -30px;
+}
+.container header nav ul li {
+  margin-right: 1em;
+  color: #797979;
+}
+.container header nav ul li:hover {
+  color: black;
+  background-color: rgb(219, 219, 219);
+}
+.container .car-section {
+  background-color: #f0f0f0;
+  text-align: center;
+  height: 50%;
+  color: #797979;
+}
+.container .car-section h2 {
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+.container .car-section .car-container {
+  display: flex;
+  flex-direction: row;
+}
+.container .car-section .car-container div {
+  width: fit-content;
+}
+.container .car-section .car-container div img {
+  width: 60%;
+  transition: transform 0.5s;
+}
+.container .car-section .car-container div img:hover {
+  transform: scale(1.2);
+}
+.container .car-section .car-container div p {
+  margin-bottom: 1em;
+}
+.container .car-section .car-container div button {
+  padding: 0.5em 2.5em;
+  border: 0;
+  color: white;
+  background-color: #e42b15;
+  transition: transform 0.5s;
+}
+.container .car-section .car-container div button:hover {
+  transform: rotate(360deg) scale(1.8);
+  background-color: orange;
+}
+.container .table-section {
+  text-align: center;
+  color: #797979;
+  height: 40%;
+}
+.container .table-section h2 {
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+.container .table-section table {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.container .table-section table thead {
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #ff3720;
+  font-size: 1.1em;
+  color: white;
+}
+.container .table-section table th, .container .table-section table td {
+  padding: 0.3em;
+}
+.container .table-section table th:first-child {
+  background-color: #e42b15;
+}
+.container .table-section table td:first-child {
+  background-color: #f0f0f0;
+}
+.container .table-section table tr {
+  border-bottom: 1px solid gray;
+}
+.container footer {
+  background-color: black;
+  height: 50%;
+}
+.container footer h1 {
+  color: #ff3720;
+  border-bottom: 1px solid #ff3720;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+.container footer h1 span {
+  color: #797979;
+}
+.container footer .foot-div {
+  color: white;
+  font-style: italic;
+  padding: 1em 7em;
+  display: flex;
+  justify-content: space-between;
+}
+.container footer .foot-div iframe {
+  width: 30%;
+  height: 380px;
+}
