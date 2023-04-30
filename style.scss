@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 *{
     padding: 0;
@@ -160,4 +161,4 @@ body{
         }
     }
 }
-
+@include medium_screen;
